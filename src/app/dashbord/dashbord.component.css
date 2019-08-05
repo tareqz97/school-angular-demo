@@ -1,0 +1,29 @@
+.item-card{
+    padding-top: 80px;
+    padding-left: 40px;
+    margin-right: 13px;
+    margin-left: -13px;
+}
+.dashbord-card-item{
+    border-color: #343a40;
+    border-top-style: solid;
+    border-style: groove;
+    border-top-color: #FF0040;
+    border-width: 1px;
+    border-top-width: 5px;
+    border-radius: 6px;
+}
+.item-card-img{
+    margin-top: 10px;
+}
+.item-card-info{
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 9px;
+    margin-left: 11px;
+}

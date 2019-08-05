@@ -1,0 +1,25 @@
+nav{
+    height: 40px;
+    color: white;
+}
+.navbar-nav {
+    margin-left: 150px;
+    font-weight: 500;
+}
+.navbar-nav li a{
+    color: white;
+}
+.li-active-style{
+    margin-top: -5px;
+    border-bottom-width: 5px;
+    border-bottom-color: #FF0040;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-radius: 5px;
+
+}
+.navbar-brand{
+    font-weight: 600;
+}

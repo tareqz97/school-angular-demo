@@ -1,0 +1,26 @@
+<!-- <div class="container">
+<div class="row">
+  <div class="col-xs-12">  
+    <div class="card" style="width: 18rem;" *ngFor="let card of cards">
+        <div class="card-header">
+            {{card.title}}
+          </div>
+      <img  src="../../assets/image/manager.png" alt="Card one ">
+      <div class="card-body">
+        <p class="card-text">{{card.description}}</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div> -->
+<div class="row">
+<div class="col-sm-6 col-md-6 col-lg-3 item-card" *ngFor="let card of cards">
+<div class="dashbord-card-item"> 
+      <div align="center" class="item-card-img"><img  src="{{card.imagePath}}" style="max-height: 100px;width: 150px;"><hr></div>
+      <p class="item-card-info">{{card.title}} : </p>
+</div>
+</div>
+</div>
+
+
