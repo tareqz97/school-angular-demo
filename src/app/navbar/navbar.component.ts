@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import * as breadcrump from '../title.service';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+  path = 'Dashbord';
   pages = [
     {
       name: 'Home',
@@ -33,8 +35,11 @@ export class NavbarComponent implements OnInit {
   ];
   constructor() {
    }
-   test = "home"
   ngOnInit() {
   }
-
-}
+  getRoute(){
+    console.log(breadcrump.getPath());
+    this.path = breadcrump.getPath();
+  }
+   
+} 

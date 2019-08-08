@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
+import * as breadcrump from '../title.service'
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
@@ -7,11 +9,14 @@ import { Router } from '@angular/router';
 })
 export class AdminComponent implements OnInit {
   href = '';
-  constructor(private router: Router) { }
-
+  activePath = '';
+  
+  constructor(private route: ActivatedRoute) {
+    this.activePath = this.route.snapshot.routeConfig.path;
+    breadcrump.setPath(this.activePath)
+   }
+   
   ngOnInit() {
-    this.href = this.router.url;
-        console.log(this.router.url);
   }
 
 }

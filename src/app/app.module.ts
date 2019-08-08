@@ -8,15 +8,13 @@ import { DashbordComponent } from './dashbord/dashbord.component';
 import { AdminComponent } from './admin/admin.component';
 import { RouterModule,Routes } from '@angular/router';
 import { TeacherComponent } from './teacher/teacher.component';
-import { BreadcrumpComponent } from './breadcrump/breadcrump.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     DashbordComponent,
     AdminComponent,
-    TeacherComponent,
-    BreadcrumpComponent
+    TeacherComponent
   ],
   imports: [
     // RouterModule.forRoot(

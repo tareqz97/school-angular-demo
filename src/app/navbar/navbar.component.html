@@ -6,11 +6,13 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item" *ngFor="let pag of pages">
+      <li class="nav-item" *ngFor="let pag of pages" (click)="getRoute()">
         <a class="nav-link" routerLink="/{{pag.routerLink}}">{{pag.name}}</a>
         <div *ngIf="pag.active" [ngClass]="{'li-active-style': pag.active===true}"></div>
       </li>
     </ul>
   </div>
 </nav>
-<app-breadcrump [title]="test"></app-breadcrump>
+<div class="row">
+  <h2 class="title">{{path}}</h2>
+</div>
